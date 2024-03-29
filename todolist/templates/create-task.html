@@ -3,7 +3,7 @@
 <h1>Create a new task</h1>
 <form method="post">
     <input type="text" name="name" placeholder="Name for the task" />
-    <select name="priority">
+    Priority: <select name="priority">
         {% for p in priority_list %}
         <option value="{{ p}}">{{ p }}</option>
         {% endfor %}

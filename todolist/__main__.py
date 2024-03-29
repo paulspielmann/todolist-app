@@ -117,3 +117,5 @@ def go_repl():
         a = input("a/u/n/l/c/d/s/q/?: ")
         f = fun_map.get(a, repl_help)
         f()
+
+go_repl()
