@@ -43,8 +43,8 @@ j'ai deux variables qui m'indiquent des choses utiles:
 
 Que faire ??!?!?
 """
-
-tasks_candidates = driver.find_elements(By.CSS_SELECTOR, 'div')
+# todo: complete that.
+tasks_candidates = driver.find_elements(By.CSS_SELECTOR, 'div.ca-ne-marchera-pas-ca')
 
 # Close the WebDriver
 
