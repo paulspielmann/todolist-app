@@ -6,7 +6,8 @@ import datetime
 from time import sleep
 
 # Initialize the WebDriver
-driver = webdriver.Chrome(keep_alive=True)
+# driver = webdriver.Chrome(keep_alive=True)
+driver = webdriver.Firefox()
 
 # Navigate to the URL
 driver.get("http://localhost:5000/")
