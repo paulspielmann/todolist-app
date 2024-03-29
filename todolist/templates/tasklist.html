@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% block content %}
+<div id="tasks-container">
+
+    {% if tasks | length > 0 %}
+    {% for task in tasks %}
+    <div class="task priority-{{ task.priority}} done-status-{{ task.is_done }} deleted-status-{{ task.is_deleted }}">
+        {{task.name}}
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="task priority-normal">
+        No task yet... your task may be to create a task!
+    </div>
+    {% endif %}
+</div>
+
+<a href="{{ url_for('create_task')}}">Create a new task</a>
+{% endblock %}

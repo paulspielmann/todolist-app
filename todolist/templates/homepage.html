@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1>Todolist Manager</h1>
+
+<p>If you want to get started, here are a few links:
+
+    <ul>
+        <li><a href="{{ url_for('tasks') }}">View tasks list</a></li>
+        <li><a href="{{ url_for('create_task') }}">Create task</a></li>
+    </ul>
+</p>
+{% endblock %}
